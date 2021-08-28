@@ -1,6 +1,6 @@
 setTimeout(function () {
     alert(
-        'Welcome to the "Josef Albers, Homage to the Square" color pallete creator and to Hex color convertor!\nClick on any of the squares and enter a rgb color value.'
+        'Welcome to the "Josef Albers, Homage to the Square" color pallete creator! \nClick on any of the squares and enter a rgb color value.'
     );
 }, 1000);
 
@@ -42,7 +42,7 @@ for (var i = 0; i < squares.length; i++) {
                     alert("invalid color");
                 }
             } else {
-                alert("You did not enter any color");
+                alert("You did not enter any color.");
             }
         },
         false
@@ -68,7 +68,7 @@ for (var i = 0; i < squares.length; i++) {
 
             e.target.setAttribute(
                 "data-color",
-                `${color} to Hex: ${"#" + r + g + b}`
+                `${color}  hex: ${"#" + r + g + b}`
             );
         }
     });

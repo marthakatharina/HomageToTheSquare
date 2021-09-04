@@ -1,6 +1,6 @@
 setTimeout(function () {
     alert(
-        'Welcome to the "Josef Albers, Homage to the Square" color pallete creator! \nClick on any of the squares and enter a rgb color value.'
+        'Welcome to the "Josef Albers, Homage to the Square" color palette creator! \nClick on any of the squares and enter a rgb color value.'
     );
 }, 1000);
 
@@ -17,7 +17,7 @@ for (var i = 0; i < squares.length; i++) {
             e.stopImmediatePropagation();
 
             color = prompt(
-                "Enter a color in rgb. \nEnter for each red, green and blue channel any number between 0 and 255 where 0 is black and 255 is white, e.g. rgb(255, 50, 120)",
+                "Enter a color in rgb. \nFor each red, green and blue channel enter any number in the range of 0-255, where 0 is the darkest and 255 the lightest, e.g. rgb(255, 50, 120). Remember to change this color to your own.",
                 "rgb(255, 50, 120)"
             );
             if (color !== null) {
@@ -42,7 +42,7 @@ for (var i = 0; i < squares.length; i++) {
                     alert("invalid color");
                 }
             } else {
-                alert("You did not enter any color.");
+                alert("C'mon, you did not enter any color.");
             }
         },
         false
@@ -75,7 +75,7 @@ for (var i = 0; i < squares.length; i++) {
 
     // self.addEventListener("mouseout", function (e) {
     //     if (e.target.style.background == color) {
-    //         e.target.removeAttribute("data-tooltip");
+    //         e.target.removeAttribute("data-color");
     //     }
     // });
 }
